@@ -229,7 +229,6 @@ def search():
 def get_stats():
     """Return application statistics."""
     from models.models import Conversation, Note, Collection
-    from sqlalchemy import func
 
     total_docs = Document.query.count()
     ready_docs = Document.query.filter_by(status='ready').count()

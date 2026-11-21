@@ -3,7 +3,6 @@ import logging
 import os
 import threading
 from datetime import datetime, timezone
-from typing import Optional
 from extensions import db
 
 logger = logging.getLogger(__name__)
@@ -19,7 +18,6 @@ def process_document(app, document_id: str):
     5. Update database
     """
     with app.app_context():
-        from extensions import db
         from models.models import Document, DocumentChunk, ProcessingJob
         from services.pdf_service import extract_text_by_page, attempt_ocr
         from services.chunking_service import chunk_pages

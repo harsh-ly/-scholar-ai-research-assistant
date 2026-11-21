@@ -2,7 +2,7 @@
 import os
 import hashlib
 import logging
-from datetime import datetime
+import uuid
 from flask import Blueprint, request, jsonify, current_app, send_file, abort
 from werkzeug.utils import secure_filename
 from extensions import db
@@ -46,7 +46,6 @@ def upload_document():
     upload_folder = current_app.config.get('UPLOAD_FOLDER', 'storage/uploads')
     os.makedirs(upload_folder, exist_ok=True)
 
-    import uuid
     doc_id = str(uuid.uuid4())
     stored_filename = f'{doc_id}_{safe_name}'
     file_path = os.path.join(upload_folder, stored_filename)

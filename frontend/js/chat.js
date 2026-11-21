@@ -7,7 +7,6 @@ const ChatModule = (() => {
   let selectedDocIds = [];
   let selectedDocTitles = {};
   let isStreaming = false;
-  let pendingRegenerateMsg = null;
 
   function onEnter() {
     loadConversationList();

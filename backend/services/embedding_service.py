@@ -1,7 +1,6 @@
 """Embedding service using Sentence Transformers."""
 import logging
 import numpy as np
-from typing import Optional
 
 logger = logging.getLogger(__name__)
 

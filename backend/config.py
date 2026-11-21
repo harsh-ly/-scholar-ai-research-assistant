@@ -34,10 +34,6 @@ class Config:
         'http://localhost:3000,http://127.0.0.1:3000,http://localhost:5500,http://127.0.0.1:5500,http://localhost:5000,http://127.0.0.1:5000'
     ).split(',')
 
-    RATE_LIMIT_CHAT = 20
-    REQUEST_TIMEOUT = 120
-    MAX_RETRIES = 3
-
 
 class DevelopmentConfig(Config):
     DEBUG = True

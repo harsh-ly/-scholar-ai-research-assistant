@@ -1,7 +1,6 @@
 """Gemini API integration service — compatible with google-genai 2.x+."""
 import logging
 import time
-from typing import Optional
 
 logger = logging.getLogger(__name__)
 

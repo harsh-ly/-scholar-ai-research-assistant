@@ -153,7 +153,7 @@ async function bootstrap() {
     }
   });
 
-  console.log('%c🎓 Scholar AI Ready', 'color:#8B7CFF;font-weight:bold;font-size:14px');
+  console.log('%c🎓 Scholar AI Ready', 'color:#0EA5E9;font-weight:bold;font-size:14px');
 }
 
 async function checkBackendHealth() {
